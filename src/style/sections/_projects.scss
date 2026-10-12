@@ -1,6 +1,11 @@
 #projects {
   background-color: $black;
-  color: $dark-blue-text;
+  // Text must be light on the black background (the template's navy was unreadable)
+  color: #c9d1d9;
+
+  .project-wrapper__text-title {
+    color: $white-color;
+  }
   margin-top: -10rem;
   padding-top: 15rem;
 

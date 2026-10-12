@@ -1,10 +1,13 @@
-import tilt from 'tilt.js';
+import VanillaTilt from 'vanilla-tilt'
 
+// Same subtle tilt on project images as before, without jQuery.
 const initTilt = () => {
-  // Projects images
-  $('.project-wrapper__image a div').tilt({
-    maxTilt: 3,
-  });
-};
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  VanillaTilt.init(document.querySelectorAll('.project-wrapper__image a div'), {
+    max: 3,
+    speed: 400,
+    glare: false,
+  })
+}
 
-export default initTilt;
+export default initTilt

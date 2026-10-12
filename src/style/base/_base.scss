@@ -5,4 +5,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  // Matches the black projects section so no white wedges show where the
+  // slanted (clip-path) sections meet
+  background-color: $black;
 }

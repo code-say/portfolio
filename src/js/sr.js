@@ -1,5 +1,14 @@
+import ScrollReveal from 'scrollreveal';
 import assignProps from './assignProps';
+
 export default function() {
+  // Skip animations for people who prefer reduced motion; just show everything
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.load-hidden').forEach((el) => el.classList.remove('load-hidden'));
+    return;
+  }
+  ScrollReveal({ reset: false });
+
   const defaultProps = {
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     distance: '30px',
