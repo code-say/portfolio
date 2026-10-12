@@ -1,5 +1,7 @@
 # Sayan Mandal · Portfolio
 
+**Live:** https://sayan-mandal-portfolio.vercel.app
+
 My developer portfolio: a .NET Core developer at Capgemini building secure, scalable backend systems with ASP.NET Core, EF Core, SQL Server and Microsoft Azure.
 
 Built on the [Simplefolio](https://github.com/cobidev/simplefolio) template by Jacobo Martinez (2021), refreshed in 2026.
